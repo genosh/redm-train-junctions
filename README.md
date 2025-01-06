@@ -26,4 +26,4 @@ For example, if you use BCC-trains, allowing switch junction too, you have to di
 - When player is train driver, press `X` to switch junction.
 
 ## GitHub
-- https://github.com/???
+- https://github.com/redm-train-junctions/
