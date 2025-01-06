@@ -1,4 +1,4 @@
-# train-debug
+# redm-train-junction
 
 ## Description
 This is script to allow player to switch train junction a sync it with other player.
@@ -13,8 +13,8 @@ Train driver can change tracks direction and see where train go on the minimap.
 - Add possibility to switch junction directly at junction tracks (when player is at the ground)
 
 ## Installation
-- Add `train-junctions` folder to your resources folder
-- Add `ensure train-junctions` to your `resources.cfg`
+- Add `redm-train-junctions` folder to your resources folder
+- Add `ensure redm-train-junctions` to your `resources.cfg`
 - Restart resource
 
 ## Dependencies
