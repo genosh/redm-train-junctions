@@ -1,4 +1,4 @@
-# redm-train-junction
+# redm-train-junctions
 
 ## Description
 This is script to allow player to switch train junction a sync it with other player.
