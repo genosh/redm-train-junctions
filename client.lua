@@ -180,6 +180,6 @@ AddEventHandler('onResourceStop', function(resourceName)
 
     --Restore Imaps
     for _, k in pairs(Config.entities) do
-        InvokeImap(k)
+        RequestImap(k)
     end
 end)
