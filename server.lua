@@ -1,16 +1,25 @@
 local junctionsKnown = {}
+local leversSpawned = false
 
-RegisterServerEvent('bcc-train:RequestJunctionStatus', function(junctionName)
+RegisterServerEvent('train-junctions:RequestJunctionStatus', function(junctionName)
     local junctionStatus = false
 
     if junctionsKnown[junctionName] ~= nil then
         junctionStatus = junctionsKnown[junctionName]
     end
-    TriggerClientEvent('bcc-train:UpdateJunctionStatus', source, junctionName, junctionStatus)
+    TriggerClientEvent('train-junctions:UpdateJunctionStatus', source, junctionName, junctionStatus)
 end)
 
-
-RegisterServerEvent('bcc-train:SwitchJunctionStatus', function(junctionName, newStatus)
+RegisterServerEvent('train-junctions:SwitchJunctionStatus', function(junctionName, newStatus)
     junctionsKnown[junctionName] = newStatus
-    TriggerClientEvent('bcc-train:UpdateJunctionStatus', -1, junctionName, newStatus)
+    TriggerClientEvent('train-junctions:UpdateJunctionStatus', -1, junctionName, newStatus)
 end)
+
+RegisterServerEvent('train-junctions:RequestJunctionLeversObj', function()
+    TriggerClientEvent('train-junctions:spawnLeversObj', source, leversSpawned)
+end)
+
+RegisterServerEvent('train-junctions:NotifyJunctionLeversObjSpawned', function()
+    leversSpawned = true
+end)
+
