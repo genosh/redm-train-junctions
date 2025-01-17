@@ -7,8 +7,8 @@ Train driver can change tracks direction and see where train go on the minimap.
 ## Features
 - Swith junction when player is driving a train
 - Visualize direction where goes the train on the minimap
-- Sync junction wth all players
--Possibility to switch junction directly at junction tracks (when player is at the ground)
+- Sync junction with all players
+- Possibility to switch junction directly at junction tracks (when player is at the ground)
 
 ## Installation
 - Add `redm-train-junctions` folder to your resources folder
